@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden scroll;
+    }
+
+    ul{
+        margin:0;
+    }
+    h1,h2,h3,h4,h5,h6{
+        margin: 0;
+    }
+    h5{
+        font-size: xxx-large;
+        color:#ffc107;
+    }
+    li{
+        list-style:none ;
+    }
+.socials{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.socials > ul{
+    display: flex;
+}
+.socials >ul > li{
+ /* margin-right: 10px;    */
+ list-style: none;
+ border: 1px solid white;
+ list-style: none;
+ border-top: none;
+ border-bottom: none;
+ padding: 0 1rem;
+}
+.navsmallscreen{
+    display: none;
+    color: wheat;
+    margin-right: 2rem;
+    border: 1px solid white;
+}
+.fa{
+    color: white;
+}
+nav{
+    background-color: #2b2626;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+nav >img{
+    height:50px;
+    width:50px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+.nav-link{
+    padding: 0;
+}
+.dropdown-menu {
+    background-color: white !important;
+    left: -50px !important;
+}
+/* .show {
+    box-shadow: 0px 0px 2px #888888;
+    background-color: #f8f9fa;
+} */
+
+.menus > ul{
+    display: flex;
+    padding-right: 20px;
+}
+.menus > ul >li{
+    margin-right: 20px;
+}
+
+.menu-links{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+color:white;
+text-decoration: none;
+}
+/* show item */
+.showcase1{
+    display: flex;
+    margin:5rem 0; 
+    justify-content: center;
+    flex-wrap: wrap ;
+}
+
+.showitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-right: 30px;
+    width: 300px;
+}
+.showitem >i{
+font-size: 50px;
+color: #ffa50061;
+margin-bottom: 2rem;
+
+}
+.showitem_contents>h4{
+color:gray;
+}
+
+.showcase2{
+    height:60vh;
+    background-image: url("./assests/img/Montr-skyline.jpg");
+    background-repeat: no-repeat;
+position: relative;
+    background-size: cover;
+}
+.overlay{
+    position: absolute;
+    height: 60vh;
+    background-color: #b6e81d87;
+    width: 100%;
+}
+.showitem_contents{
+    text-align: center;
+}
+
+.showcase2content{
+
+  
+    position: absolute;
+    z-index: 3;
+    width: 50%;
+
+    text-align: center;
+    height: 60vh;
+ 
+    top: 25%;
+    right: 25%;
+
+
+}
+.showcase2content >button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+footer{
+    margin-top: 5rem;
+    background-color: #2b2626;
+    color: white;
+    width:100%
+
+}
+.footerparagraph{
+    text-align: center;
+    padding: 1rem 5rem;
+}
+.footersocials>ul{
+    display: flex;
+    justify-content: center;
+}
+.footersocials>ul>li{
+    margin-right:10px ;
+}
+
+@media screen and (max-width:800px){
+    .navsmallscreen{
+    display: block;
+    position: absolute;
+    right: 0;
+}
+.menus{
+    display: none;
+}
+.navbar-nav{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #2b2626;
+    padding: 2rem;
+}
+#logo{
+    position: absolute;
+}
+}
+.showitem_contents>h4 {
+    color: #212529;
+}
+
+@media screen and (max-width:500px){
+    .showcase2content >h3{
+        font-size: 20px;
+    }
+}
